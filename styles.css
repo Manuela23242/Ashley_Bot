@@ -1,0 +1,66 @@
+/* Grundstil für das Layout und Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Standard-Hintergrundfarbe für Light Mode */
+    color: #333; /* Standardfarbe für Text im Light Mode */
+  }
+  .section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  .commands-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    opacity: 0; /* Anfangszustand: unsichtbar */
+    animation: fadeIn 1s forwards; /* Fade-In Animation */
+  }
+  .command-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+  body.dark-mode .command-item {
+    background-color: #333;
+    color: #fff;
+  }
+  /* Schalter-Stil */
+  .mode-switch {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  /* Einladungs-Button-Stil */
+  .invite-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #7289DA;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .invite-button:hover {
+    background-color: #5f73a1;
+  }
+  

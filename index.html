@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Discord Bot Showcase</title>
+<link rel="stylesheet" href="styles.css"> <!-- Verweise auf die CSS-Datei -->
+</head>
+<body class="dark-mode">
+
+<!-- Mode-Schalter -->
+<div class="mode-switch" onclick="toggleDarkMode()">
+  <span id="mode-icon">🌛</span> <!-- 🌞 für Light Mode, 🌛 für Dark Mode -->
+</div>
+
+<!-- Einladungs-Button -->
+<a class="invite-button" href="https://discord.com/oauth2/authorize?client_id=1255898672244199454&permissions=8&integration_type=0&scope=bot" target="_blank" rel="noopener noreferrer">Bot einladen</a>
+
+<!-- Inhaltsabschnitte -->
+<section class="section">
+  <h1>Mein Discord Bot</h1>
+  <p>Aktuell auf <span id="server-count" class="server-count">1</span> Servern aktiv</p>
+</section>
+
+<section class="section">
+  <h2>Commands</h2>
+  <ul class="commands-list">
+    <li class="command-item">
+      <strong>/arbeiten</strong> - arbeite für eine streak!.
+    </li>
+    <li class="command-item">
+      <strong>/leaderboard</strong> - Zeigt ein leaderboard an wer die meisten streaks hat top 1 - 10.
+    </li>
+    <li class="command-item">
+      <strong>/kuscheln</strong> - Kuschel mit einem user.
+    </li>
+    <li class="command-item">
+      <strong>/greet</strong> - Grüsse einen user.
+    </li>
+    <li class="command-item">
+        <strong>/help</strong> - Zeigt dir eine Tabele an funktionen des bots an.
+      </li>
+    <!-- Weitere Befehle hier ergänzen -->
+  </ul>
+</section>
+
+<script src="script.js"></script> <!-- Verweise auf die JavaScript-Datei -->
+</body>
+</html>
